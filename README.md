@@ -1,7 +1,7 @@
 # Proctly - Desktop Application Downloads
 
-[![Latest Release](https://img.shields.io/github/v/release/i-internet/monitoring-app-server-builds?label=Latest%20Version)](https://github.com/i-internet/monitoring-app-server-builds/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/i-internet/monitoring-app-server-builds/total?label=Total%20Downloads)](https://github.com/i-internet/monitoring-app-server-builds/releases)
+[![Latest Release](https://img.shields.io/github/v/release/i-internet/proctly.com?label=Latest%20Version)](https://github.com/i-internet/proctly.com/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/i-internet/proctly.com/total?label=Total%20Downloads)](https://github.com/i-internet/proctly.com/releases)
 
 **Proctly** is an advanced online proctoring desktop application designed for secure exam monitoring. This repository hosts the official release builds for Windows, macOS, and Linux.
 
@@ -11,13 +11,13 @@
 
 | Platform | Download | Architecture |
 |----------|----------|--------------|
-| **Windows** | [Download .exe](https://github.com/i-internet/monitoring-app-server-builds/releases/latest/download/Proctly.Setup.3.0.0.exe) | 64-bit |
-| **Windows** | [Download .exe (32-bit)](https://github.com/i-internet/monitoring-app-server-builds/releases/latest/download/Proctly.Setup.3.0.0.ia32.exe) | 32-bit |
-| **macOS** | [Download .dmg](https://github.com/i-internet/monitoring-app-server-builds/releases/latest/download/Proctly-3.0.0.dmg) | Universal |
-| **Linux** | [Download .AppImage](https://github.com/i-internet/monitoring-app-server-builds/releases/latest/download/Proctly-3.0.0.AppImage) | 64-bit |
-| **Linux** | [Download .deb](https://github.com/i-internet/monitoring-app-server-builds/releases/latest/download/proctly.com_3.0.0_amd64.deb) | 64-bit (Debian/Ubuntu) |
+| **Windows** | [Download .exe](https://github.com/i-internet/proctly.com/releases/latest/download/Proctly.Setup.3.0.2.exe) | 64-bit |
+| **Windows** | [Download .exe (32-bit)](https://github.com/i-internet/proctly.com/releases/latest/download/Proctly.Setup.3.0.2.ia32.exe) | 32-bit |
+| **macOS** | [Download .dmg](https://github.com/i-internet/proctly.com/releases/latest/download/Proctly-3.0.2.dmg) | Universal |
+| **Linux** | [Download .AppImage](https://github.com/i-internet/proctly.com/releases/latest/download/Proctly-3.0.2.AppImage) | 64-bit |
+| **Linux** | [Download .deb](https://github.com/i-internet/proctly.com/releases/latest/download/proctly.com_3.0.2_amd64.deb) | 64-bit (Debian/Ubuntu) |
 
-> **Note:** For the most up-to-date download links, always check the [Releases page](https://github.com/i-internet/monitoring-app-server-builds/releases).
+> **Note:** For the most up-to-date download links, always check the [Releases page](https://github.com/i-internet/proctly.com/releases).
 
 ---
 
@@ -92,7 +92,7 @@ Proctly is a comprehensive desktop proctoring solution that enables educational 
 
 ### Windows
 
-1. Download the `.exe` installer from the [Releases page](https://github.com/i-internet/monitoring-app-server-builds/releases)
+1. Download the `.exe` installer from the [Releases page](https://github.com/i-internet/proctly.com/releases)
 2. Run the installer (`Proctly Setup X.X.X.exe`)
 3. Follow the installation wizard
 4. Choose installation directory (optional)
@@ -100,7 +100,7 @@ Proctly is a comprehensive desktop proctoring solution that enables educational 
 
 ### macOS
 
-1. Download the `.dmg` file from the [Releases page](https://github.com/i-internet/monitoring-app-server-builds/releases)
+1. Download the `.dmg` file from the [Releases page](https://github.com/i-internet/proctly.com/releases)
 2. Open the `.dmg` file
 3. Drag Proctly to the Applications folder
 4. On first launch, right-click and select "Open" (required for unsigned apps)
@@ -263,7 +263,7 @@ Proctly collects the following data during proctored sessions:
 
 ## Release History
 
-All releases are available on the [Releases page](https://github.com/i-internet/monitoring-app-server-builds/releases).
+All releases are available on the [Releases page](https://github.com/i-internet/proctly.com/releases).
 
 ### Version Numbering
 
@@ -304,9 +304,9 @@ Proctly is proprietary software. All rights reserved.
 
 ## Links
 
-- **Releases:** [GitHub Releases](https://github.com/i-internet/monitoring-app-server-builds/releases)
+- **Releases:** [GitHub Releases](https://github.com/i-internet/proctly.com/releases)
 - **Website:** [proctly.com](https://proctly.com)
 
 ---
 
-*Last updated: January 2026*
+*Last updated: February 2026*
