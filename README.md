@@ -11,11 +11,11 @@
 
 | Platform | Download | Architecture |
 |----------|----------|--------------|
-| **Windows** | [Download .exe](https://github.com/i-internet/proctly.com/releases/latest/download/Proctly.Setup.3.0.4.exe) | 64-bit |
-| **Windows** | [Download .exe (32-bit)](https://github.com/i-internet/proctly.com/releases/latest/download/Proctly.Setup.3.0.4.ia32.exe) | 32-bit |
-| **macOS** | [Download .dmg](https://github.com/i-internet/proctly.com/releases/latest/download/Proctly-3.0.4-arm64.dmg) | ARM64 |
-| **Linux** | [Download .AppImage](https://github.com/i-internet/proctly.com/releases/latest/download/Proctly-3.0.4.AppImage) | 64-bit |
-| **Linux** | [Download .deb](https://github.com/i-internet/proctly.com/releases/latest/download/proctly.com_3.0.4_amd64.deb) | 64-bit (Debian/Ubuntu) |
+| **Windows** | [Download .exe](https://github.com/i-internet/proctly.com/releases/latest/download/Proctly.Setup.3.0.5.exe) | 64-bit |
+| **Windows** | [Download .exe (32-bit)](https://github.com/i-internet/proctly.com/releases/latest/download/Proctly.Setup.3.0.5.ia32.exe) | 32-bit |
+| **macOS** | [Download .dmg](https://github.com/i-internet/proctly.com/releases/latest/download/Proctly-3.0.5-arm64.dmg) | ARM64 |
+| **Linux** | [Download .AppImage](https://github.com/i-internet/proctly.com/releases/latest/download/Proctly-3.0.5.AppImage) | 64-bit |
+| **Linux** | [Download .deb](https://github.com/i-internet/proctly.com/releases/latest/download/proctly.com_3.0.5_amd64.deb) | 64-bit (Debian/Ubuntu) |
 
 > **Note:** For the most up-to-date download links, always check the [Releases page](https://github.com/i-internet/proctly.com/releases).
 
