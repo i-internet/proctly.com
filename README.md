@@ -11,11 +11,10 @@
 
 | Platform | Download | Architecture |
 |----------|----------|--------------|
-| **Windows** | [Download .exe](https://github.com/i-internet/proctly.com/releases/latest/download/Proctly.Setup.3.0.5.exe) | 64-bit |
-| **Windows** | [Download .exe (32-bit)](https://github.com/i-internet/proctly.com/releases/latest/download/Proctly.Setup.3.0.5.ia32.exe) | 32-bit |
-| **macOS** | [Download .dmg](https://github.com/i-internet/proctly.com/releases/latest/download/Proctly-3.0.5-arm64.dmg) | ARM64 |
-| **Linux** | [Download .AppImage](https://github.com/i-internet/proctly.com/releases/latest/download/Proctly-3.0.5.AppImage) | 64-bit |
-| **Linux** | [Download .deb](https://github.com/i-internet/proctly.com/releases/latest/download/proctly.com_3.0.5_amd64.deb) | 64-bit (Debian/Ubuntu) |
+| **Windows** | [Download .exe](https://github.com/i-internet/proctly.com/releases/latest/download/Proctly.Setup.3.0.9.exe) | 64-bit |
+| **macOS** | [Download .dmg](https://github.com/i-internet/proctly.com/releases/latest/download/Proctly-3.0.9-arm64.dmg) | ARM64 |
+| **Linux** | [Download .AppImage](https://github.com/i-internet/proctly.com/releases/latest/download/Proctly-3.0.9.AppImage) | 64-bit |
+| **Linux** | [Download .deb](https://github.com/i-internet/proctly.com/releases/latest/download/proctly.com_3.0.9_amd64.deb) | 64-bit (Debian/Ubuntu) |
 
 > **Note:** For the most up-to-date download links, always check the [Releases page](https://github.com/i-internet/proctly.com/releases).
 
@@ -339,83 +338,9 @@ npm run build:linux-deb
 
 Build output goes to the `dist/` folder.
 
-### Deploying a New Release (CI/CD)
+### Deploying a New Release
 
-The project uses **GitHub Actions** to automatically build and release for all platforms. Here's how to push a new version:
-
-#### Step 1: Make your changes
-
-Edit the code as needed (e.g., `main.js`, HTML files, etc.)
-
-#### Step 2: Bump the version in `package.json`
-
-```json
-"version": "X.Y.Z"
-```
-
-#### Step 3: Commit and push
-
-```bash
-git add main.js package.json          # Add changed files
-git commit -m "vX.Y.Z - Description of changes"
-git push origin main
-```
-
-#### Step 4: Tag and push the tag (triggers the build)
-
-```bash
-git tag vX.Y.Z
-git push origin vX.Y.Z
-```
-
-> **This is the key step!** Pushing a `v*` tag triggers the GitHub Actions workflow which:
-> 1. Builds **Windows** (.exe x64 + x32) on `windows-latest`
-> 2. Builds **macOS** (.dmg + .zip) on `macos-latest`
-> 3. Builds **Linux** (.AppImage + .deb) on `ubuntu-latest`
-> 4. Creates a **GitHub Release** in the public repo [`i-internet/proctly.com`](https://github.com/i-internet/proctly.com) with all artifacts
-> 5. Syncs `Builds.md` as README to the public repo
-
-#### If a build fails and you need to re-tag
-
-```bash
-# Delete the old tag locally and remotely
-git tag -d vX.Y.Z
-git push origin :refs/tags/vX.Y.Z
-
-# Fix the issue, commit, and push
-git add .
-git commit -m "vX.Y.Z - Fix description"
-git push origin main
-
-# Re-create and push the tag
-git tag vX.Y.Z
-git push origin vX.Y.Z
-```
-
-#### Manual trigger (without tagging)
-
-You can also trigger the build manually from the **GitHub Actions tab** → **Build and Release** → **Run workflow**. Note: manual triggers will build but won't create a release (releases require a tag).
-
-### Build Pipeline Overview
-
-```
-git push origin vX.Y.Z
-        │
-        ▼
-┌─────────────────────────────────────────────┐
-│           GitHub Actions Workflow             │
-├──────────┬──────────┬───────────────────────┤
-│ Windows  │  macOS   │  Linux                │
-│ .exe x64 │  .dmg    │  .AppImage            │
-│ .exe x32 │  .zip    │  .deb                 │
-└────┬─────┴────┬─────┴────┬──────────────────┘
-     │          │          │
-     ▼          ▼          ▼
-┌─────────────────────────────────────────────┐
-│  Release created in i-internet/proctly.com  │
-│  with all build artifacts attached          │
-└─────────────────────────────────────────────┘
-```
+Releases are built on the team's Mac (macOS, Windows and Linux) and published here with the GitHub API. There is no CI. The internal step-by-step guide is `docs/deployment.md` in the source repository.
 
 ### Project Structure
 
@@ -437,10 +362,9 @@ monitoring-app-client/
 ├── index.html               # Test webview container
 ├── styles.css               # Global styles
 │
-├── build/                   # App icons (icon.ico, icon.png)
+├── build/                   # App icons, macOS ad-hoc signing hook
+├── docs/                    # Internal docs (release steps, decisions)
 ├── images/                  # Branding assets
-├── .github/workflows/       # CI/CD pipeline
-│   └── build.yml            # Build and release workflow
 └── dist/                    # Build output (gitignored)
 ```
 
