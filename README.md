@@ -11,10 +11,10 @@
 
 | Platform | Download | Architecture |
 |----------|----------|--------------|
-| **Windows** | [Download .exe](https://github.com/i-internet/proctly.com/releases/latest/download/Proctly.Setup.3.0.10.exe) | 64-bit |
-| **macOS** | [Download .dmg](https://github.com/i-internet/proctly.com/releases/latest/download/Proctly-3.0.10-arm64.dmg) | ARM64 |
-| **Linux** | [Download .AppImage](https://github.com/i-internet/proctly.com/releases/latest/download/Proctly-3.0.10.AppImage) | 64-bit |
-| **Linux** | [Download .deb](https://github.com/i-internet/proctly.com/releases/latest/download/proctly.com_3.0.10_amd64.deb) | 64-bit (Debian/Ubuntu) |
+| **Windows** | [Download .exe](https://github.com/i-internet/proctly.com/releases/latest/download/Proctly.Setup.3.0.11.exe) | 64-bit |
+| **macOS** | [Download .dmg](https://github.com/i-internet/proctly.com/releases/latest/download/Proctly-3.0.11-arm64.dmg) | ARM64 |
+| **Linux** | [Download .AppImage](https://github.com/i-internet/proctly.com/releases/latest/download/Proctly-3.0.11.AppImage) | 64-bit |
+| **Linux** | [Download .deb](https://github.com/i-internet/proctly.com/releases/latest/download/proctly.com_3.0.11_amd64.deb) | 64-bit (Debian/Ubuntu) |
 
 > **Note:** For the most up-to-date download links, always check the [Releases page](https://github.com/i-internet/proctly.com/releases).
 
@@ -102,7 +102,7 @@ Proctly is a comprehensive desktop proctoring solution that enables educational 
 1. Download the `.dmg` file from the [Releases page](https://github.com/i-internet/proctly.com/releases)
 2. Open the `.dmg` file
 3. Drag Proctly to the Applications folder
-4. On first launch, right-click and select "Open" (required for unsigned apps)
+4. Open Proctly. macOS asks once to confirm, because it came from the internet (the app is signed and notarised by Apple)
 5. Grant necessary permissions (Camera, Microphone, Screen Recording)
 
 ### Linux
